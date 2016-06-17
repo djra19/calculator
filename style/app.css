@@ -25,6 +25,7 @@ button {
 	background: transparent;
 	color: white;
 	font-size: 2.4rem;
+	border-radius: 0; /* B2G */
 }
 
 /*--------------------------
