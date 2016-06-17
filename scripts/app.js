@@ -144,7 +144,10 @@
 	  	});
 
   		// Por los momentos solo soportamos enteros
-  		this.printOutput(c_buffer.toFixed());
+  		if(!c_buffer)
+  		  this.printOutput("Error!");
+  		else
+  		  this.printOutput(c_buffer.toFixed());
   	},
 
   	printOutput: function(val) {
@@ -159,22 +162,30 @@
       Operaciones
   */
   	  window.calc_add = function(val, dest) {
-  	  	dest = dest + val;
+  	  	dest += val;
+  	  	if(isNaN(dest))
+  	  		return false;
   	    return dest;
   	  };
 
   	  window.calc_sustract = function(val, dest) {
-  	  	dest = dest - val;
+  	  	dest -= val;
+  	  	if(isNaN(dest))
+  	  		return false;
   	    return dest;
   	  };
 
   	  window.calc_mux = function(val, dest) {
-  	  	dest = dest * val;
+  	  	dest *= val;
+  	  	if(isNaN(dest))
+  	  		return false;
   	    return dest;
   	  };
 
   	  window.calc_div = function(val, dest) {
-  	  	dest = dest / val;
+  	  	dest /= val;
+  	  	if(isNaN(dest))
+  	  		return false;
   	    return dest;
   	  };
 
