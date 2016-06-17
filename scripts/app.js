@@ -49,13 +49,18 @@
   		}
   	},
 
-  	clearAll: function() {
-  		var o_node = document.querySelector(".output textarea");
+  	setOutputZero: function() {
+  	  var o_node = document.querySelector(".output textarea");
 
-		o_node.value = "0";
-		this.s_result = true
+	  o_node.value = "0";
+	  this.s_result = true;
+  	},
+
+  	clearAll: function() {
 		this.c_stack = [];
 		this.t_operation = Operations.ADD;
+
+		this.setOutputZero();
   	},
 
   	writeKey: function(key) {
