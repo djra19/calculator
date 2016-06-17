@@ -28,10 +28,15 @@
   		var btn_remove = document.querySelector(".output .clear");  		
   		btn_remove.addEventListener("click", function() {
   			var o_node = document.querySelector(".output textarea");
-  			if(o_node.value.length > 1)
+  			if(self.s_result === true) {
+  				self.setOutputZero();
+  			}
+  			else if(o_node.value.length > 1) {
   				o_node.value = o_node.value.substring(0, o_node.value.length - 1);
-  			else
-  				o_node.value = "0";
+  			}
+  			else {
+				self.setOutputZero();
+  			}
   		});
 
   		// Keypad
