@@ -6,28 +6,28 @@
   "start_url": "./index.html",
   "display": "standalone",
   "icons": [{
-    "src": "res/logo48.jpg",
+    "src": "res/logo48.png",
     "sizes": "48x48",
-    "type": "image/jpeg"
+    "type": "image/png"
   }, {
-    "src": "res/logo72.jpg",
+    "src": "res/logo72.png",
     "sizes": "72x72",
-    "type": "image/jpeg"
+    "type": "image/png"
   }, {
-    "src": "res/logo96.jpg",
+    "src": "res/logo96.png",
     "sizes": "96x96",
-    "type": "image/jpeg"
+    "type": "image/png"
   }, {
-    "src": "res/logo144.jpg",
+    "src": "res/logo144.png",
     "sizes": "144x144",
-    "type": "image/jpeg"
+    "type": "image/png"
   }, {
-    "src": "res/logo168.jpg",
+    "src": "res/logo168.png",
     "sizes": "168x168",
-    "type": "image/jpeg"
+    "type": "image/png"
   }, {
-    "src": "res/logo192.jpg",
+    "src": "res/logo192.png",
     "sizes": "192x192",
-    "type": "image/jpeg"
+    "type": "image/png"
   }]
 }

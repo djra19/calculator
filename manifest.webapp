@@ -8,10 +8,10 @@
         "name": "David Romero"
     },
     "icons": {
-        "16": "/res/logo16.jpg",
-        "32": "/res/logo32.jpg",
-        "48": "/res/logo48.jpg",
-        "64": "/res/logo64.jpg",
-        "128": "/res/logo128.jpg"
+        "16": "/res/logo16.png",
+        "32": "/res/logo32.png",
+        "48": "/res/logo48.png",
+        "64": "/res/logo64.png",
+        "128": "/res/logo128.png"
     }
 }
