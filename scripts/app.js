@@ -21,7 +21,7 @@
   		});
 
   		// Clear Output
-  		var btn_ce = document.querySelector(".keypad .clear");
+  		var btn_ce = document.querySelector(".output .ce");
   		btn_ce.addEventListener("click", function(){self.clearAll();});
 
   		// Remove Number
