@@ -144,10 +144,13 @@
 	  	});
 
   		// Por los momentos solo soportamos enteros
-  		if(!c_buffer)
+  		if(!c_buffer) {
+  		  this.clearAll();
   		  this.printOutput("Error!");
-  		else
+  		}
+  		else {
   		  this.printOutput(c_buffer.toFixed());
+  		}
   	},
 
   	printOutput: function(val) {
