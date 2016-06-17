@@ -144,13 +144,11 @@
 	  	});
 
   		// Por los momentos solo soportamos enteros
-  		this.printResult(c_buffer.toFixed());
+  		this.printOutput(c_buffer.toFixed());
   	},
 
-  	printResult: function(val) {
+  	printOutput: function(val) {
   		var o_node = document.querySelector(".output textarea");
-  		if(isNaN(val))
-  			throw new TypeError("El valor no es un numero.");
 
   		this.s_result = true;
   		o_node.value = val.toString();
