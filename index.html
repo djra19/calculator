@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000">
+
+  <link rel="manifest" href="manifest.json">
+
+  <link rel="stylesheet" type="text/css" href="style/app.css">
+  <link rel="stylesheet" type="text/css" href="style/font-awesome.min.css">
+
+  <script defer src="scripts/app.js"></script>
+</head>
+
+<body>
+  <section class="main">
+    <article class="output">
+      <div class="content">
+	    <textarea readonly>0</textarea>
+	    <button class="clear" type="button"><span class="fa fa-reply"></span></button>
+	  </div>
+    </article>
+
+    <section class="keys">
+	  <article class="keypad">
+	    <div class="content">
+	      <ul>
+	      	<li class="row">
+	      	  <div>
+	      	    <ul class="buttons">
+	        	  <li><button type="button" value="1">1</button></li>
+	        	  <li><button type="button" value="2">2</button></li>
+	        	  <li><button type="button" value="3">3</button></li>
+	      		</ul>
+	      	  </div>
+	      	</li>
+	      	<li class="row">
+	      	  <div>
+	      	    <ul class="buttons">
+				  <li><button type="button" value="4">4</button></li>
+				  <li><button type="button" value="5">5</button></li>
+				  <li><button type="button" value="6">6</button></li>
+	      		</ul>
+	      	  </div>
+	      	</li>
+	      	<li class="row">
+	      	  <div>
+	      	    <ul class="buttons">
+	        	  <li><button type="button" value="7">7</button></li>
+				  <li><button type="button" value="8">8</button></li>
+				  <li><button type="button" value="9">9</button></li>
+	      		</ul>
+	      	  </div>
+	      	</li>
+	      	<li class="row">
+	      	  <div>
+	      	    <ul class="buttons">	      	    
+				  <li><button class="clear" type="button">CE</button></li>
+	        	  <li><button type="button" value="0">0</button></li>
+				  <li><button class="about" type="button"><span class="fa fa-info"></span></button></li>
+	      		</ul>
+	      	  </div>
+	      	</li>
+	      </ul>
+	    </div>
+	  </article>
+
+      <article class="operators">
+        <div class="content">
+          <ul>
+            <li><button type="button" value="ADD">+</button></li>
+            <li><button type="button" value="SUSTRACT">-</button></li>
+            <li><button type="button" value="MULTIPLY">*</button></li>
+            <li><button type="button" value="DIV">/</button></li>
+            <li><button type="button" value="equal">=</button></li>
+          </ul>
+        </div>
+      </article>
+    </section>
+  </section>
+</body>
+</html>

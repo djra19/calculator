@@ -1,0 +1,17 @@
+{
+    "name": "Calculadora",
+    "version": "1.0.0",
+    "description": "Una simple calculadora para la web.",
+    "launch_path": "/index.html",
+    "default_locale": "es",
+    "developer": {
+        "name": "David Romero"
+    },
+    "icons": {
+        "16": "/res/logo16.jpg",
+        "32": "/res/logo32.jpg",
+        "48": "/res/logo48.jpg",
+        "64": "/res/logo64.jpg",
+        "128": "/res/logo128.jpg"
+    }
+}
