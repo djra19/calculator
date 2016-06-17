@@ -36,15 +36,17 @@
 
   		// Keypad
   		var btns_keypad = document.querySelectorAll(".keypad button[value]");
-  		btns_keypad.forEach(function(node) {
+  		for (var i = 0; i < btns_keypad.length; i++) {
+  		  var node = btns_keypad[i];
   		  node.addEventListener('click', function(){self.writeKey(this);});
-  		});
+  		}
 
   		// Operations
   		var btns_command = document.querySelectorAll(".operators button");
-  		btns_command.forEach(function(node) {
+  		for (var i = 0; i < btns_command.length; i++) {
+  		  var node = btns_command[i];
   		  node.addEventListener('click', function(){self.setOperation(this);});
-  		});
+  		}
   	},
 
   	clearAll: function() {
