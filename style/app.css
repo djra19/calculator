@@ -52,7 +52,6 @@ article > .content {
 	position: relative;
 	box-sizing: border-box;
 	padding: 3rem;
-	box-shadow: .1rem .1rem .5rem #b6b6b6;
 	background-color: rgb(55, 165, 230);
 }
 
