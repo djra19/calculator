@@ -56,7 +56,7 @@ article > .content {
 }
 
 .output textarea {
-	width: calc(100% - 5rem); /* 4.5rem Commands, 0.5rem Margin */
+	width: calc(75% + 1.5rem);
 	height: 100%;
 	background: transparent;
 	color: white;
@@ -70,9 +70,9 @@ article > .content {
 	bottom: 0;
 	right: 0;
 	box-sizing: border-box;
-	padding: 2.2rem 0;
-	margin-right: 3rem;
-	width: 4.5rem;
+	padding-top: 2.2rem;
+	margin: 0 5%;
+	width: 15%;
 }
 
 .output .commands button {
