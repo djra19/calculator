@@ -25,7 +25,7 @@
   		btn_ce.addEventListener("click", function(){self.clearAll();});
 
   		// Remove Number
-  		var btn_remove = document.querySelector(".output .clear");  		
+  		var btn_remove = document.querySelector(".output .clear");
   		btn_remove.addEventListener("click", function() {
   			var o_node = document.querySelector(".output textarea");
   			if(self.s_result === true) {
@@ -43,14 +43,14 @@
   		var btns_keypad = document.querySelectorAll(".keypad button[value]");
   		for (var i = 0; i < btns_keypad.length; i++) {
   		  var node = btns_keypad[i];
-  		  node.addEventListener('click', function(){self.writeKey(this);});
+  		  node.addEventListener("click", function(){self.writeKey(this);});
   		}
 
   		// Operations
   		var btns_command = document.querySelectorAll(".operators button");
   		for (var i = 0; i < btns_command.length; i++) {
   		  var node = btns_command[i];
-  		  node.addEventListener('click', function(){self.setOperation(this);});
+  		  node.addEventListener("click", function(){self.setOperation(this);});
   		}
   	},
 
@@ -89,7 +89,7 @@
   			this.t_operation = Operations[k_val];
   			return;
   		}
-  		
+
   		// Agregamos un nuevo termino a la pila
   		this.add2stack(parseInt(o_node.value), this.t_operation);
 
@@ -97,13 +97,13 @@
   		if(k_val == "equal" || this.c_stack.length > 1)
   			this.resolve();
 
-  		// Si la tecla presionada es 'Igual', no queremos cambiar el operando.
+  		// Si la tecla presionada es "Igual", no queremos cambiar el operando.
   		if(k_val == "equal")
   			return;
 
   		// Actualizamos el operando
   		this.t_operation = Operations[k_val];
-		this.s_result = true; 		
+		this.s_result = true;
   	},
 
   	add2stack: function(val, op) {
@@ -193,7 +193,7 @@
   	  };
 
   /*
- 	  Arranque
+ 	    Arranque
   */
   	  app.setEvs();
 })();
