@@ -105,12 +105,6 @@ article > .content {
 .keys button {
 	width: 100%;
 	height: 100%;
-	transition: background-color .25s;
-}
-
-.keys button:active {
-	background-color: #bbf;
-	color: black;
 }
 
 /*--------------------------
