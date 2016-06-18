@@ -39,6 +39,12 @@
   			}
   		});
 
+      // Key Buttons
+      var btns_keys = document.querySelectorAll(".keys button");
+      for (var i = btns_keys.length - 1; i >= 0; i--) {
+        btns_keys[i].addEventListener("click", addRippleEffect);
+      }
+
   		// Keypad
   		var btns_keypad = document.querySelectorAll(".keypad button[value]");
   		for (var i = 0; i < btns_keypad.length; i++) {
