@@ -52,13 +52,13 @@
   		// Keypad
   		var btns_keypad = document.querySelectorAll(".keypad button[value]");
   		for (var j = 0; j < btns_keypad.length; j++) {
-  		  btns_keypad[j].addEventListener("click", self.writeKey);
+  		  btns_keypad[j].addEventListener("click", this.ev_writeKey);
   		}
 
   		// Operations
   		var btns_command = document.querySelectorAll(".operators button");
   		for (var k = 0; k < btns_command.length; k++) {
-  		  btns_command[k].addEventListener("click", self.setOperation);
+  		  btns_command[k].addEventListener("click", this.ev_setOperation);
   		}
   	},
 
@@ -89,6 +89,11 @@
   		o_node.value = o_node.value + k_val.toString();
   	},
 
+    ev_writeKey: function(e) {
+      app.writeKey(e);
+      return false;
+    },
+
   	setOperation: function(e) {
       var key = e.target;
   		var o_node = document.querySelector(".output textarea");
@@ -115,6 +120,11 @@
   		this.t_operation = Operations[k_val];
 		  this.s_result = true;
   	},
+
+    ev_setOperation: function(e) {
+      app.setOperation(e);
+      return false;
+    },
 
   	add2stack: function(val, op) {
   		if(isNaN(val))
