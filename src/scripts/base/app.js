@@ -1,4 +1,8 @@
+/* jshint strict: true */
+/* exported Operations, app */
+
 (function() {
+"use strict";
   window.Operations = {
     ADD: 0,
     SUSTRACT: 1,
