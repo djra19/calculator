@@ -39,7 +39,7 @@
   				o_node.value = o_node.value.substring(0, o_node.value.length - 1);
   			}
   			else {
-				self.setOutputZero();
+				  self.setOutputZero();
   			}
   		});
 
@@ -52,33 +52,32 @@
   		// Keypad
   		var btns_keypad = document.querySelectorAll(".keypad button[value]");
   		for (var j = 0; j < btns_keypad.length; j++) {
-  		  var node = btns_keypad[j];
-  		  node.addEventListener("click", function(){self.writeKey(this);});
+  		  btns_keypad[j].addEventListener("click", self.writeKey);
   		}
 
   		// Operations
   		var btns_command = document.querySelectorAll(".operators button");
   		for (var k = 0; k < btns_command.length; k++) {
-  		  var node = btns_command[k];
-  		  node.addEventListener("click", function(){self.setOperation(this);});
+  		  btns_command[k].addEventListener("click", self.setOperation);
   		}
   	},
 
   	setOutputZero: function() {
   	  var o_node = document.querySelector(".output textarea");
 
-	  o_node.value = "0";
-	  this.s_result = true;
+  	  o_node.value = "0";
+  	  this.s_result = true;
   	},
 
   	clearAll: function() {
-		this.c_stack = [];
-		this.t_operation = Operations.ADD;
+  		this.c_stack = [];
+  		this.t_operation = Operations.ADD;
 
-		this.setOutputZero();
+  		this.setOutputZero();
   	},
 
-  	writeKey: function(key) {
+  	writeKey: function(e) {
+      var key = e.target;
   		var o_node = document.querySelector(".output textarea");
   		var k_val = key.getAttribute("value") || 0;
 
@@ -90,7 +89,8 @@
   		o_node.value = o_node.value + k_val.toString();
   	},
 
-  	setOperation: function(key) {
+  	setOperation: function(e) {
+      var key = e.target;
   		var o_node = document.querySelector(".output textarea");
   		var k_val = key.getAttribute("value");
 
@@ -113,7 +113,7 @@
 
   		// Actualizamos el operando
   		this.t_operation = Operations[k_val];
-		this.s_result = true;
+		  this.s_result = true;
   	},
 
   	add2stack: function(val, op) {
