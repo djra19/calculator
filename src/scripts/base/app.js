@@ -51,15 +51,15 @@
 
   		// Keypad
   		var btns_keypad = document.querySelectorAll(".keypad button[value]");
-  		for (var i = 0; i < btns_keypad.length; i++) {
-  		  var node = btns_keypad[i];
+  		for (var j = 0; j < btns_keypad.length; j++) {
+  		  var node = btns_keypad[j];
   		  node.addEventListener("click", function(){self.writeKey(this);});
   		}
 
   		// Operations
   		var btns_command = document.querySelectorAll(".operators button");
-  		for (var i = 0; i < btns_command.length; i++) {
-  		  var node = btns_command[i];
+  		for (var k = 0; k < btns_command.length; k++) {
+  		  var node = btns_command[k];
   		  node.addEventListener("click", function(){self.setOperation(this);});
   		}
   	},
