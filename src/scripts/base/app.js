@@ -183,6 +183,16 @@
     load: function() {
       // Establecemos los EventListeners de la IU
       app.setEvs();
+
+      // Gestion de la SW
+      app.manageSW();
+    },
+
+    manageSW: function() {
+      var docpath = getRootPath();
+      if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register(docpath + "/sw.js");
+      }
     }
   };
 
