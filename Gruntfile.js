@@ -2,7 +2,7 @@ module.exports = function(grunt) {
   grunt.initConfig({
   	jshint: {
   	  default: {
-  	  	src: ["src/scripts/base/**/*.js"]
+  	  	src: ["src/scripts/base/**/*.js", "src/scripts/root/**/*.js"]
   	  }
   	},
 
@@ -34,9 +34,16 @@ module.exports = function(grunt) {
               "index.html",
               "favicon.ico",
               "style/thirdparty/**/*",
-              "scripts/**/*",
+              "scripts/base/**/*",
+              "scripts/thirdparty/**/*",
               "res/**/*"
             ],
+            dest: "out/"
+          },
+          {
+            expand: true,
+            cwd: "src/scripts/root/",
+            src: [ "**/*" ],
             dest: "out/"
           },
           {
