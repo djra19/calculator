@@ -178,7 +178,12 @@
 
   		this.s_result = true;
   		o_node.value = val.toString();
-  	}
+  	},
+
+    load: function() {
+      // Establecemos los EventListeners de la IU
+      app.setEvs();
+    }
   };
 
   /*
@@ -215,5 +220,5 @@
   /*
  	    Arranque
   */
-  	  app.setEvs();
+  	  window.addEventListener("load", app.load);
 })();
